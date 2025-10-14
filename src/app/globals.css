@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+@layer components {
+  h1 {
+    @apply text-5xl font-bold mb-4;
+  }
+  h2{
+    @apply text-xl font-semibold mb-2;
+  }
+
+}
+main {
+  height: 100vh;
+  overflow-y:auto;
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+
+}
