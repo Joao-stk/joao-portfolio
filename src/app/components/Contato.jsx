@@ -62,7 +62,7 @@ function Contato() {
                     <div>
                         <div className={bgDiv + hoverEffect}>
                             <h2>LinkedIn</h2>
-                            <p>Linkakajsk</p>
+                            <p className="whitespace-nowrap">João Felipe Araújo da Silva</p>
                         </div>
                     </div>
                 </div>
