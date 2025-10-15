@@ -35,7 +35,7 @@ export default function Banner({
           whileInView={{ x: 0, opacity: 1, rotate: 0, scale: 1 }}
           transition={{ duration: 1.5, type: "spring", stiffness: 80, damping: 12 }}
           viewport={{ once: false, amount: 0.5 }}
-          className="relative z-10 flex h-full flex-col items-center justify-center text-left px-6"
+          className="relative z-10 flex flex-col h-full items-center justify-center text-left px-3 md:items-start md:px-6 lg:px-9 py-20"
         >
           <h1 className="text-3xl md:text-5xl lg:text-6xl text-white drop-shadow-lg">
             {title}
