@@ -76,7 +76,11 @@ export default function Banner({
         </motion.div>
 
       </div>
-      <div className="hidden md:block min-h-screen">
+      <motion.div
+        initial={{ y: -200, opacity: 0, rotate: -15, scale: 0.9 }}
+        whileInView={{ y: 0, opacity: 1, rotate: 0, scale: 1 }}
+        transition={{ duration: 1.5, type: "spring", stiffness: 80, damping: 12 }}
+        viewport={{ once: false, amount: 0.5 }} className="hidden md:block min-h-screen">
         <div className="h-full hidden md:flex min-h-screen items-center justify-center bg-white/10  mb-[5%]">
           <div className=" h-full flex flex-col items-center gap-10 px-6 py-10">
             <h2 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500 font-medium" >Experiências</h2>
@@ -132,7 +136,7 @@ export default function Banner({
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-sm text-gray-200/70">
         <span className="inline-flex items-center gap-2">
           <a href={buttonRightHref}>
