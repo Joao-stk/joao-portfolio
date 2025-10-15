@@ -18,7 +18,7 @@ export default function Banner({
 
   return (
 
-    <section id="home" className="snap-start relative grid grid-cols-2 w-full min-h-screen overflow-hidden">
+    <section id="home" className="snap-start relative md:grid md:grid-cols-2 flex w-full min-h-screen overflow-hidden">
       <div>
         <div
           className="absolute inset-0 bg-fixed bg-center bg-cover"
