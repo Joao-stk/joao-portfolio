@@ -126,15 +126,6 @@ export default function Banner({
               </motion.a>
             </div>
           </div>
-          {/* Redes sociais (opcional) */}
-          <div className="flex gap-4 mt-4 justify-center">
-            <a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer">
-              <svg className="w-6 h-6 sm:w-7 sm:h-7 text-gray-300 hover:text-purple-400" />
-            </a>
-            <a href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener noreferrer">
-              <svg className="w-6 h-6 sm:w-7 sm:h-7 text-gray-300 hover:text-purple-400" />
-            </a>
-          </div>
         </div>
       </motion.div>
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-sm text-gray-200/70">
