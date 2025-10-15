@@ -7,20 +7,28 @@
 html {
   scroll-behavior: smooth;
 }
+
 @layer components {
   h1 {
     @apply text-5xl font-bold mb-4;
   }
-  h2{
+
+  h2 {
     @apply text-xl font-semibold mb-2;
   }
 
+  #button {
+    @apply bg-gradient-to-r from-purple-500 to-rose-500 px-12 py-5 text-sm md:text-base font-semibold text-white shadow-lg transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300;
+  }
+
 }
+
 main {
   height: 100vh;
-  overflow-y:auto;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
+
 section {
   height: 100vh;
   scroll-snap-align: start;
