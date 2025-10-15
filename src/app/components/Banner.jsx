@@ -9,7 +9,7 @@ export default function Banner({
   image = "/banner.jpg",
   title = "Transformando ideias em experiências digitais incríveis",
   subtitle = "Desenvolvedor Frontend | React | Next.js | Tailwind CSS. Vamos criar algo incrível juntos!",
-  buttonLeftText = "Entre em contato →",
+  buttonLeftText = "Entre em contato",
   buttonLeftHref = "/#contato",
   buttonRightText = "Ver projetos",
   buttonRightHref = "/#projetos",
