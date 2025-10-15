@@ -21,7 +21,7 @@ function Projetos() {
                     <img src="/projeto1.png" alt="Projeto 1" className="w-full h-48 object-cover" />
                     <div className="p-6">
                         <h3 className="text-xl font-semibold mb-2 text-gray-800">Projeto 1</h3>
-                        <p className="text-gray-600 mb-4">Descrição breve do projeto 1.</p>
+                        <p className="text-gray-600 mb-4">Descrição</p>
                         <a href="#" className="text-indigo-600 hover:underline">Ver mais</a>
                     </div>
                 </div>

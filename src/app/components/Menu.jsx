@@ -1,12 +1,17 @@
 "use client";
 import { isActiveSection } from "../hooks/isActiveSection";
+import {motion } from "motion/react"
 
 function Menu() {
   const sectionIds = ["home", "projetos", "sobre", "contato"];
   const activeId = isActiveSection(sectionIds);
 
   return (
-    <nav className="fixed top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-lg rounded-l-xl p-4 flex flex-col gap-4 z-50">
+    <motion.nav
+    initial={{ y: 200, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="fixed top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-lg rounded-l-xl p-4 flex flex-col gap-4 z-50">
       {sectionIds.map((id) => (
         <a
           key={id}
@@ -19,7 +24,7 @@ function Menu() {
           {id.charAt(0).toUpperCase() + id.slice(1)}
         </a>
       ))}
-    </nav>
+    </motion.nav>
   );
 }
 
