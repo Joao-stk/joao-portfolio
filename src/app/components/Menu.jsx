@@ -11,7 +11,7 @@ function Menu() {
     initial={{ y: 200, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
     transition={{ duration: 0.5 }}
-    className="fixed top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-lg rounded-l-xl p-4 flex flex-col gap-4 z-50">
+    className="fixed top-1/2 right-0 transform -translate-y-1/2 bg-white shadow-lg rounded-l-xl p-4 flex flex-col gap-4 z-99">
       {sectionIds.map((id) => (
         <a
           key={id}
