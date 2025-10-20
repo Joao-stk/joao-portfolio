@@ -22,14 +22,12 @@ function Contato() {
       <div className="absolute w-[60%] h-60 bg-purple-400/30 rotate-10 blur-3xl top-[-10%] left-[-10%] rounded-lg pointer-events-none z-0" />
       <h1 className="items-center text-center">Contato</h1>
       <div className=" grid grid-cols-3 ">
-        <div className="h-full w-full flex flex-col justify-around p-5">
-          <motion.div
-            initial={{ y: 200, opacity: 0, scale: 0.5 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-            }}
-            viewport={{ once: false, amount: 0.5 }}
+        <motion.div
+        initial={{y:200, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{duration:0.8}}
+        className="h-full w-full flex flex-col justify-around p-5">
+          <div
             className={
               hoverEffect +
               " flex flex-col h-fit items-center text-center p-2 cursor-pointer w-full mt-[5%] mb-[5%]  "
@@ -52,14 +50,8 @@ function Contato() {
                 <p className="whitespace-nowrap">+55 (16) 99333-0441</p>
               </div>
             </div>
-          </motion.div>
-          <motion.div
-            initial={{ y: 200, opacity: 0, scale: 0.5 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-            }}
-            viewport={{ once: false, amount: 0.5 }}
+          </div>
+          <div
             className={
               hoverEffect +
               " flex flex-col h-fit items-center text-center p-2 cursor-pointer w-full "
@@ -75,14 +67,8 @@ function Contato() {
                 <p>Github</p>
               </div>
             </div>
-          </motion.div>
-          <motion.div
-            initial={{ y: 200, opacity: 0, scale: 0.5 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-            }}
-            viewport={{ once: false, amount: 0.5 }}
+          </div>
+          <div
             className={
               hoverEffect +
               " flex flex-col h-fit items-center text-center p-2 cursor-pointer w-full "
@@ -98,8 +84,8 @@ function Contato() {
                 <p className="whitespace-nowrap">João Felipe Araújo da Silva</p>
               </div>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
         <div className="w-full col-span-2 h-full flex flex-col justify-around p-5 mt-[5%] mb-[5%]">
           <div className="justify-center text-center h-full w-full">
             <h2 className="text-3xl">Entre em contato</h2>

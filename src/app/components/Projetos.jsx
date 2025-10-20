@@ -10,7 +10,7 @@ function Projetos() {
         >
             {/* Losango de fundo */}
             <div className="absolute w-[60%] h-60 bg-purple-400/30 rotate-45 blur-3xl top-[-10%] left-[-10%] rounded-lg pointer-events-none z-0" />
-            <div className="absolute w-[50%] h-80 bg-pink-400/20 rotate-45 blur-2xl bottom-[-20%] right-[-15%] rounded-lg pointer-events-none z-0" />
+            <div className="absolute w-[50%] h-80 bg-pink-400/20 rotate-45 blur-3xl bottom-[-20%] right-[-15%] rounded-lg pointer-events-none z-0" />
 
             {/* Conteúdo acima */}
             <div className="text-center z-10">

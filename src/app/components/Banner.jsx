@@ -6,15 +6,16 @@ import { iconsAnimation } from "./Styles";
 import React from "react";
 import { motion } from "motion/react"
 
+
 export default function Banner({
 
-  image = "/banner.jpg",
   title = "Transformando ideias em experiências digitais incríveis",
   subtitle = "Desenvolvedor Frontend | React | Next.js | Tailwind CSS. Vamos criar algo incrível juntos!",
   buttonLeftText = "Entre em contato",
   buttonLeftHref = "/#contato",
   buttonRightText = "Ver projetos",
   buttonRightHref = "/#projetos",
+  
 
 }) {
 
@@ -23,9 +24,6 @@ export default function Banner({
     <section id="home" className="flex flex-col snap-start relative md:grid md:grid-cols-2 w-full min-h-screen overflow-visible md:overflow-hidden">
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
-        style={{
-          backgroundImage: `url(${image})`,
-        }}
         aria-hidden="true"
       />
       <div className="relative min-h-screen">
@@ -84,8 +82,8 @@ export default function Banner({
                 <p className="text-sm sm:text-base text-gray-700 font-medium text-center">Anos de<br />Experiência</p>
               </div>
               <div className="flex flex-col items-center bg-white/70 rounded-xl p-3 sm:p-4 shadow">
-                <p className="text-3xl sm:text-4xl font-extrabold text-purple-700 mb-1">20+</p>
-                <p className="text-sm sm:text-base text-gray-700 font-medium text-center">Projetos<br />Completos</p>
+                <p className="text-3xl sm:text-4xl font-extrabold text-purple-700 mb-1">39K+</p>
+                <p className="text-sm sm:text-base text-gray-700 font-medium text-center">Xícaras de Café<br />Tomadas</p>
               </div>
             </div>
             <div className="flex flex-col items-center bg-white/70 rounded-xl p-3 sm:p-4 shadow w-full sm:w-2/3 mx-auto">
