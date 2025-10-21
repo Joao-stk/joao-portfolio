@@ -138,51 +138,54 @@ function Projetos() {
           </motion.div>
 
           {/* Projeto 3 */}
+
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.4,
-            }}
+            transition={{ duration: 0.4 }}
             viewport={{ once: true }}
             className={
               hoverEffect +
-              " cursor-pointer bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl shadow-lg overflow-hidden border border-white/20 hover:border-white/30 transition-all duration-200 min-h-[280px] flex flex-col sm:col-span-2 xl:col-span-1"
+              " cursor-pointer bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl shadow-lg overflow-hidden border border-white/20 hover:border-white/30 transition-all duration-200 min-h-[280px] flex flex-col sm:col-span-2 xl:col-span-1 relative"
             }
           >
-            <div className="w-full h-32 sm:h-36 md:h-40 bg-gradient-to-br from-green-500/20 to-emerald-500/20 flex items-center justify-center flex-shrink-0">
-              <span className="text-white text-base sm:text-lg font-semibold">
-                Projeto 3
-              </span>
-            </div>
-            <div className="p-3 sm:p-4 flex-1 flex flex-col">
-              <h3 className="text-base sm:text-lg font-semibold mb-2 text-white">
-                Dashboard Admin
-              </h3>
-              <p className="text-gray-300 text-xs sm:text-sm leading-relaxed flex-1">
-                Painel administrativo com gráficos e relatórios em tempo real.
-              </p>
-              <a
-                href="#"
-                className="text-purple-400 hover:text-purple-300 font-medium text-xs sm:text-sm transition-colors duration-200 inline-flex items-center gap-1 mt-3"
+            <a href="https://parallax-creator.vercel.app" target="_blank" className="block relative h-full">
+              {/* Imagem com efeito parallax */}
+              <motion.div
+                className="absolute inset-0 overflow-hidden"
+                initial={{ y: 0 }}
+                whileInView={{ y: -30 }}
+                transition={{ ease: "easeOut", duration: 1.2 }}
+                viewport={{ amount: 0.6 }}
               >
-                Ver mais
-                <svg
-                  className="w-3 h-3 sm:w-4 sm:h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-            </div>
+                <iframe
+                  src="https://parallax-creator.vercel.app"
+                  className="w-full h-full scale-125 brightness-50 blur-[5px]"
+                  style={{
+                    transformOrigin: "center",
+                    pointerEvents: "none",
+                  }}
+                ></iframe>
+              </motion.div>
+
+              {/* Gradiente por cima */}
+              <div className="absolute inset-0 bg-black/30"></div>
+
+              {/* Conteúdo na parte inferior */}
+              <div className="relative z-10 mt-auto p-3 sm:p-4 flex flex-col justify-end h-full">
+                <h3 className="text-base sm:text-lg font-semibold mb-2 text-white">
+                  Criador Efeito Parallax
+                </h3>
+                <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                  Automatiza a criação de efeito parallax, utilizando um background.
+                </p>
+              </div>
+            </a>
           </motion.div>
+
+
+
+
         </div>
       </motion.div>
 
