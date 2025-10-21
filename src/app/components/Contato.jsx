@@ -27,6 +27,7 @@ function Contato() {
         whileInView={{y:0, opacity:1}}
         transition={{duration:0.8}}
         className="h-full w-full flex flex-col justify-around p-5">
+          <a href="https://wa.me/5516993330441" target="_blank">
           <div
             className={
               hoverEffect +
@@ -51,6 +52,7 @@ function Contato() {
               </div>
             </div>
           </div>
+          </a>
           <div
             className={
               hoverEffect +

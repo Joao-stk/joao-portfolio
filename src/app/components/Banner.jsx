@@ -73,22 +73,22 @@ export default function Banner({
         viewport={{ once: true, amount: 0.5 }}
         className="flex min-h-screen items-center justify-center bg-transparent mb-0 md:mb-[5%] px-2 sm:px-4 z-90"
       >
-        <div className="w-full flex flex-col items-center gap-8 sm:gap-10 px-2 sm:px-6 py-8 sm:py-10">
+        <div className="w-full h-full bg-gradient-to-tr from-black to-blue-900/60 flex flex-col items-center gap-8 sm:gap-10 px-2 sm:px-6 py-8 sm:py-10">
           <h2 className="text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500 font-medium text-center">Experiências</h2>
-          <div className="w-full max-w-md bg-white/20 rounded-2xl shadow-2xl p-4 sm:p-8 flex flex-col items-center gap-4 sm:gap-6 outline-2 outline-white">
+          <div className="w-full max-w-md p-4 sm:p-8 flex flex-col items-center gap-4 sm:gap-6 ">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
-              <div className="flex flex-col items-center bg-white/70 rounded-xl p-3 sm:p-4 shadow">
-                <p className="text-3xl sm:text-4xl font-extrabold text-purple-700 mb-1">5+</p>
-                <p className="text-sm sm:text-base text-gray-700 font-medium text-center">Anos de<br />Experiência</p>
+              <div className=" flex flex-col items-center rounded-xl p-3 sm:p-4 shadow ">
+                <p className="text-3xl sm:text-4xl font-extrabold text-purple-700 mb-1">1+</p>
+                <p className="text-sm sm:text-base text-white font-medium text-center">Ano de<br />Experiência</p>
               </div>
-              <div className="flex flex-col items-center bg-white/70 rounded-xl p-3 sm:p-4 shadow">
+              <div className=" flex flex-col items-center rounded-xl p-3 sm:p-4 shadow ">
                 <p className="text-3xl sm:text-4xl font-extrabold text-purple-700 mb-1">39K+</p>
-                <p className="text-sm sm:text-base text-gray-700 font-medium text-center">Xícaras de Café<br />Tomadas</p>
+                <p className="text-sm sm:text-base text-white font-medium text-center">Xícaras de Café<br />Tomadas</p>
               </div>
             </div>
-            <div className="flex flex-col items-center bg-white/70 rounded-xl p-3 sm:p-4 shadow w-full sm:w-2/3 mx-auto">
+            <div className="flex flex-col items-center rounded-xl p-3 sm:p-4 shadow w-full sm:w-2/3 mx-auto">
               <p className="text-3xl sm:text-4xl font-extrabold text-purple-700 mb-1">10+</p>
-              <p className="text-sm sm:text-base text-gray-700 font-medium text-center">Clientes<br />Satisfeitos</p>
+              <p className="text-sm sm:text-base text-white font-medium text-center">Clientes<br />Satisfeitos</p>
             </div>
           </div>
           {/* Tecnologias */}
